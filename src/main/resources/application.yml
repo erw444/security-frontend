@@ -1,0 +1,12 @@
+server:
+  port: 8081
+
+ribbon:
+  eureka:
+    enabled: false
+
+zuul:
+  routes:
+    login:
+      path: /login
+      url: http://localhost:8080/login
